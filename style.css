@@ -1,0 +1,104 @@
+* {
+  font-family: "Roboto", sans-serif;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  color: var(--ft-primary);
+}
+:root {
+  font-size: 62.5%;
+  --ft-primary: #fff;
+  --ft-remove: #f75a68;
+  --bg-primary: rgba(6, 94, 124, 1);
+  --bg-second: rgba(6, 22, 27, 0.5);
+  --bg-body: #2f2f33;
+  --ft-input: #7c7c8a;
+}
+body {
+  background-color: var(--bg-body);
+}
+main {
+  max-width: 112rem;
+  margin: 11.5rem auto;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header #search input {
+  background-color: var(--bg-second);
+  padding: 1.6rem;
+  width: 43rem;
+  border: none;
+  border-radius: 0.5rem;
+  color: var(--ft-primary);
+  font-size: 1.6rem;
+  margin-right: 0.8rem;
+}
+header #search ::placeholder {
+  color: var(--ft-input);
+}
+header #search button {
+  border-radius: 0.5rem;
+  font-size: 1.6rem;
+  padding: 1.2rem 3.2rem;
+  font-weight: bold;
+  color: #fff;
+  background: var(--bg-primary);
+  border: none;
+  cursor: pointer;
+  transition: 500ms;
+}
+header #search button:hover {
+  background-color: var(--ft-primary);
+  color: var(--bg-primary);
+}
+/*Table*/
+table {
+  margin-top: 8.7rem;
+  width: 100%;
+  border-collapse: collapse;
+}
+table thead {
+  background-color: var(--bg-primary);
+}
+table thead th {
+  padding: 1.6rem 4rem;
+  font-size: 2rem;
+}
+table tbody td {
+  text-align: center;
+  font-size: 2rem;
+  padding: 2.8rem;
+}
+table tbody td:nth-child(1) {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+table tbody td img {
+  border-radius: 50%;
+  display: block;
+}
+table tbody td p {
+  font-weight: bold;
+}
+.remove {
+  color: var(--ft-remove);
+  background-color: transparent;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+  font-size: 2rem;
+}
+table tbody tr:nth-child(even) {
+  background-color: rgba(6, 22, 27, 0.5);
+}
+
+table tbody tr:nth-child(odd) {
+  background-color: rgba(6, 24, 28, 1);
+}
+i {
+  cursor: pointer;
+}
