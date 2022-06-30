@@ -102,3 +102,34 @@ table tbody tr:nth-child(odd) {
 i {
   cursor: pointer;
 }
+@media (max-width: 1024px) {
+  body {
+    padding: 5rem;
+  }
+}
+@media (max-width: 900px) {
+  header {
+    flex-direction: column;
+    gap: 3rem;
+  }
+  table {
+    max-width: 100vh;
+  }
+  #search {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+@media (max-width: 600px) {
+  #search {
+    flex-direction: column;
+  }
+  header #search input {
+    margin-bottom: 1rem;
+    width: 80vw;
+  }
+  header #search button {
+    width: 80vw;
+  }
+}
